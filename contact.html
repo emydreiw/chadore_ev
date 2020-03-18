@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Chadore, tout pour vos chats</title>
+  <link rel="stylesheet" href="style.css" media="screen">
+  <link rel="stylesheet" href="print.css" media="print">
+  <script src="script.js"></script>
+</head>
+
+<body>
+	<div class="topBar">
+		<div class="phoneNb">Une question ? Appelez-moi au 06 18 40 05 94</div>	
+	</div>
+
+	<nav>
+		<div>
+			<img src="logosm.png" alt="Logo de Chadore">
+		</div>
+		<div class="paws">
+			<img src="cat-paws.png" alt="Patte de chat">
+			<p>
+				Garde de chat et de petits animaux<br>
+				Sur Gagnac et ses alentours
+			</p>
+		</div>	
+		<div>
+			<a href="chadore.html" title="Accueil" class="accueil">Accueil</a></li>
+    		<a href="prestations.html" title="Les Prestations">Prestations</a></li>
+    		<a href="tarifs.html" title="Mes tarifs">Tarifs</a></li>
+  			<a href="contact.html" title="Contact">Contactez-moi</a></li>
+  		</div>
+	</nav>
+
+	<div class="contact-page">
+		<h2 class="contact-titre">Contact</h2>
+		<p class="contact-sous-titre">Vous pouvez me contacter au 06 18 40 05 94 ou bien en remplissant le formulaire ci-dessous.</p>
+		<form action="contact.html">
+			<fieldset>
+				<div class="coordonnées"><p>Coordonnées</p></div>
+				<div class="obligation"><p>Les champs avec <abbr title="(obligatoire)" aria-hidden="true">*</abbr> sont obligatoires.</p>
+				</div>	
+				<div>
+					<input type="radio" id="mr" name="civility" value="mr" >
+					<label for="mr">Mr</label>	
+					<input type="radio" id="idMme" name="civility" value="Mme">
+					<label for="mme">Mme</label>
+				</div>
+				<div>
+					<label>Nom : <abbr title="(obligatoire)">* </abbr><input type="text" id="nom" name="nom" required></label>
+					<label>Prénom : <abbr title="(obligatoire)">* </abbr><input type="text" id="firstName" name="firstName" required></label>
+				</div>
+				<div>
+					<label>Email : <abbr title="(obligatoire)">* </abbr><input type="text" id="mail" name="mail" required></label>
+					<label>Téléphone : <abbr title="(obligatoire)">* </abbr><input type="texte" id="tel" name="tel" required></label>
+				</div>
+				<div>
+					<label>Adresse : <input type="text" id="adresse" name="adresse" required></label>
+				</div>
+				<div>
+					<label>Code Postal : <abbr title="(obligatoire)">* </abbr><input type="number" id="cp" name="cp" required></label>
+					<label>Ville : <abbr title="(obligatoire)">* </abbr><input type="text" id="ville" name="ville" required></label>
+				</div>
+				<div>
+					<label for="textarea">Message : <abbr title="(obligatoire)">*</abbr></label>
+					<textarea id="textarea" name="textarea" rows="10" cols="50" placeholder="Décrire les prestations souhaitées..." required></textarea>
+				</div>
+				<div>
+					<input type="checkbox" class="checkbox" name="cgu" id="cgu">
+					<label for="checkbox">J'accepte les conditions générales.</label>
+				</div>
+				<div>
+					<button class="button" name="send">Envoyer</button>
+				</div>
+			</fieldset>
+		</form>	
+	</div>
+		
+	<footer>
+		<p><a href="mentions-legales.html">Mentions légales</a> - <a href="cgu.html">Conditions générales</a></p>
+	</footer>
+</body>
+</html>
